@@ -1,0 +1,63 @@
+/* MOBILE */
+
+@import '../funciones/extends';
+@import '../funciones/list';
+@import '../funciones/mixins';
+
+/*MOBILE QUERY*/
+@media only screen and (min-width: 601px) {
+
+    .none-desktop {
+        display: none !important;
+    }
+ }
+
+ @media only screen and (min-width: 600px) and  (max-width: 1200px) {
+
+    .seccion-nietos {
+
+        height: 1200px;
+        padding: 0px 5%;
+    }
+ }
+
+
+ @media only screen and (min-width: 100px) and  (max-width: 600px) {
+
+body {
+
+    .none-mobile {
+        display: none !important;
+    }
+}
+body {
+    margin: 0px auto;
+    height: 220vw;
+
+}
+
+nav {
+    text-align: center;
+}
+
+
+
+.ttd {
+
+    font-size: 0.7rem;
+
+}
+
+
+.ttd-text {
+
+    font-size: 0.7rem;
+
+}
+
+ 
+.mail {
+    font-size: 0.7rem;
+}
+
+}

@@ -1,0 +1,443 @@
+@import '../funciones/mixins';
+@import '../funciones/list';
+
+*{
+    padding: 0;
+    margin: 0;
+
+    ::-webkit-scrollbar {
+        width: 10px;
+     }
+
+    ::-webkit-scrollbar-thumb {
+        background: nth($color, 2);
+        border-radius: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        box-shadow: rgb(238 234 244) 0px 0px 5px inset;
+        border-radius: 10px;
+    }
+
+}
+
+body {
+    line-height: 1.55;
+    margin: 0px auto;
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(46,61,68);
+    background: linear-gradient(180deg, rgba(46,61,68,1) 5%, rgba(48,11,57,1) 100%);
+    background-repeat:no-repeat;
+    background-size: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+header {
+    height: 45vw;
+}
+
+nav {
+    text-align: center;
+}
+
+.section {
+    height: fit-content;
+    padding: 5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.titulos {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.subtitulos {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 15rem;
+}
+
+
+.proximamente {
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.ttd-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+.ttd {
+    color: #300b39;
+    text-align: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    background-color: white;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    margin: 0.1rem;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+        background-color: rgb(120,168,141);
+    }
+}
+
+.mail {
+    color: #300b39;
+    text-align: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    background-color: white;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    margin: 0.1rem;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        color: #300b39;
+        background-color: rgb(120,168,141);
+    }
+}
+
+
+.ttd-text {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    background-color: #300b39;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    margin: 0.1rem;
+    transition: 0.5s ease-in-out;
+    z-index: -50;
+}
+
+
+
+
+// NUESTROS TRABAJOS
+
+.nuestrostrabajoscont {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+
+
+    
+}
+
+.logoscont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 0.1rem;
+    }
+
+
+    .subtitulos-trabajos {
+        color: #300b39;
+        text-align: center;
+        align-items: center;
+        font-family: 'Roboto Slab', serif;
+        font-weight: bold;
+        background-color: white;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        margin: 0.1rem;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+
+    
+        &:hover {
+            background-color: rgb(120,168,141);
+        }
+    }
+    .subtrabcont {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .deskmobcont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .subtitulos-trabajos-deskmob {
+        color: white;
+        text-align: center;
+        align-items: center;
+        font-family: 'Roboto Slab', serif;
+        font-weight: bold;
+        background-color: #300b39;
+        padding: 0.25rem;
+        font-size: 0.7vw;
+        margin: 0.1rem;
+        transition: 0.5s ease-in-out;
+        width: 5rem;
+        
+        cursor: pointer;
+
+        &:hover {
+            color: white;
+            background-color: rgb(120,168,141);
+        }
+    }
+
+ 
+    .paginascont {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+
+.nuestrostrabajosimg {
+    width: 60%;
+    margin: 1rem;
+    border-radius: 10px;
+
+}
+
+.nuestrostrabajosstatic {
+    width: 60%;
+    margin: 1rem;
+    border-radius: 10px;
+    background-color: #2e0c38;
+    color: white;
+    font-size: 3rem;
+    padding: 12rem;
+    font-family: 'Roboto Slab', serif;
+
+
+}
+
+
+.navicon {
+    width: 3rem;
+    filter: invert(100%);
+}
+
+
+.greenback {
+    background-color: #78a88d;
+}
+
+
+
+
+
+
+
+
+.hide {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////
+////////////EFECTOS////////////
+///////////////////////////////
+
+
+
+.side {
+    animation: sideeffect 0.4s ;
+    animation-name: sideeffect;
+
+    @keyframes sideeffect {
+
+        0% {
+            opacity: 0%;
+            position: relative;
+            right: 0.5rem;
+        }
+
+        10% {
+            opacity: 5%;
+            position: relative;
+            right: 0.45rem;
+       }
+
+        20% {
+            opacity: 10%;
+            position: relative;
+            right: 0.4rem;
+            
+               }
+
+        30% {
+            opacity: 15%;
+            position: relative;
+            right: 0.35rem;
+       }
+
+        40% {
+            opacity: 20%;
+            position: relative;
+            right: 0.3rem;
+        }
+
+        50% {
+            opacity: 30%;
+            position: relative;
+            right: 0.25rem;
+       }
+        
+        60% {
+            opacity: 50%;
+            position: relative;
+            right: 0.2rem;
+        }
+
+        70% {
+            opacity: 70%;
+            position: relative;
+            right: 0.15rem;
+       }
+
+        80% {
+            opacity: 80%;
+            position: relative;
+            right: 0.1rem;
+        }
+
+        90% {
+            opacity: 90%;
+            position: relative;
+            right: 0.05rem;
+       }
+        
+        100% {
+            opacity: 100%;
+            position: relative;
+            right: 0rem;
+        }
+}
+}
+
+.upward {
+    animation: upwardeffect 0.4s ;
+    animation-name: upwardseffect;
+
+    @keyframes upwardseffect {
+
+        0% {
+            opacity: 0%;
+            position: relative;
+            bottom: 0.5rem;
+        }
+
+        10% {
+            opacity: 5%;
+            position: relative;
+            bottom: 0.45rem;
+       }
+
+        20% {
+            opacity: 10%;
+            position: relative;
+            bottom: 0.4rem;
+            
+               }
+
+        30% {
+            opacity: 15%;
+            position: relative;
+            bottom: 0.35rem;
+       }
+
+        40% {
+            opacity: 20%;
+            position: relative;
+            bottom: 0.3rem;
+        }
+
+        50% {
+            opacity: 30%;
+            position: relative;
+            bottom: 0.25rem;
+       }
+        
+        60% {
+            opacity: 50%;
+            position: relative;
+            bottom: 0.2rem;
+        }
+
+        70% {
+            opacity: 70%;
+            position: relative;
+            bottom: 0.15rem;
+       }
+
+        80% {
+            opacity: 80%;
+            position: relative;
+            bottom: 0.1rem;
+        }
+
+        90% {
+            opacity: 90%;
+            position: relative;
+            bottom: 0.05rem;
+       }
+        
+        100% {
+            opacity: 100%;
+            position: relative;
+            bottom: 0rem;
+        }
+}
+}
+
