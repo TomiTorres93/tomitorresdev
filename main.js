@@ -94,7 +94,7 @@ function deskmobseleccion (a, b, c, d, e, f, g) {
         b.classList.toggle('upward');
         
         // Chequea que el desktop o mobile de la misma categoría contenga hide
-        
+
         let check = c.classList.contains('hide')
 
         // Chequea que el desktop o mobile de las otras categorías contenga hide
@@ -156,3 +156,79 @@ let educacionclickmob = deskmobseleccion (educacionmobile, eymmobvideo, eymdeskv
 
 
 
+////////////////////////////////
+////////SECCION SKILLS//////////
+////////////////////////////////
+
+const htmlbutton = document.querySelector('#htmlbutton')
+const cssbutton = document.querySelector('#cssbutton')
+const jsbutton = document.querySelector('#jsbutton')
+const bio = document.querySelector('#bio')
+const bio2 = document.querySelector('#bio2')
+const hacemeclick = document.querySelector('#hacemeclick')
+const botonsubmit = document.querySelector('#botonsubmit')
+const nombre = document.querySelector('#nombre')
+
+
+
+htmlbutton.addEventListener('click', function () {
+
+    bio.classList.toggle('hide');
+    bio.classList.toggle('upward');
+    
+    
+})
+
+
+cssbutton.addEventListener('click', function () {
+
+    bio2.classList.toggle('bio');
+})
+
+
+jsbutton.addEventListener('click', function () {
+
+    nombre.classList.toggle('hide');
+    nombre.classList.toggle('upward');
+
+    
+})
+
+
+
+
+
+// $('#nombre').bind('keyup change',function(){
+//     if(this.value.length > 0){
+//       $('#botonsubmit').show();
+
+// }
+// else {
+//     $('#botonsubmit').hide();
+// }
+// });
+
+
+// const inputnombre = document.querySelector('#inputnombre')
+
+// let form = document.getElementById('form');
+
+// form.addEventListener("input", function(e) {
+//     e.preventDefault();
+    
+//     console.log(nombre.value)
+// })
+
+
+  
+
+// // `${nuevaSolicitud.nombre}`
+
+// const confia = document.querySelector('#confia')
+ 
+
+// botonsubmit.addEventListener('click', function () {
+
+//     confia2.innerHTML = nombre.value;
+//     confia.classList.toggle('hide');
+// })
