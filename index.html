@@ -80,7 +80,7 @@
 <!-- NUESTROS TRABAJOS -->
 
 <section class="section">
-    <h2 class="titulos">NUESTROS TRABAJOS</h2>
+    <h2 class="titulos">TRABAJOS</h2>
 
     <div class="nuestrostrabajoscont">
         <div class="subtrabcont">
@@ -142,20 +142,111 @@
   <h2 class="titulos">SKILLS</h2>
 
   <div class="skillscont">
-    <button id="htmlbutton" type="text" class="skills">HTML</button>
-    <button id="cssbutton" type="text" class="skills">CSS</button>
-    <button id="jsbutton" type="text" class="skills">Javascript</button>
+    <p id="htmlbutton" type="text" class="skills">HTML</p>
+    <p id="cssbutton" type="text" class="skills">CSS</p>
+    <p id="jsbutton" type="text" class="skills">Javascript</p>
   </div>
   <div id="bio" class="hide white"> <p id="bio2"> Soy <b>Tomás Torres</b>, desarrollador web y periodista, y en este portfolio te muestro todo lo que podés tener en tu sitio web.
-</p>
+</p> 
   
-    <!-- <form class="botoncont" id="form" action="">
-    <input class="hacemeclick hide" type="text" name="nombre" placeholder="Ingresá tu nombre" id="nombre"> 
-
-
-    <p id="botonsubmit" type="text" class="botonsubmit hide">➤</p>
-    </form> -->
+  <button id="darkmode" class="darkmodebutton hide" type="text"> <img id="sol" class="darkicon" src="images\sol.png" alt="sol"> <img id="luna" class="darkicon hide" src="images\luna.png" alt="sol"></button> 
   </div>
+</section>
+
+
+<section class="section">
+  <h2 class="titulos">¡EL MEJOR PRECIO!</h2>
+
+  <div class="precios-cont white">
+
+    <div class="precios-det-cont">
+
+      <div class="opc-cont">
+        <p id="landing" class="precios-opc"> Landing</p>
+        <p id="multipage" class="precios-opc"> Multi-Page</p>
+      </div>
+
+      <ul class="servicios">
+        <div id="paginas" class="servicios-opc hide"><li> Cantidad de páginas</li> <div class="cant-pag-cont">
+          <p id="cincopag" class="textopeq greenback cant-pag">hasta 5</p>
+          <p id="diezpag" class="textopeq greenback cant-pag">hasta 10</p>
+        </div> </div>
+        <div class="servicios-opc"><li> Dominio propio</li> <div class="opcion">✔️</div> </div>
+        <div class="servicios-opc"><li> Hosting x 1 año</li> <div class="opcion">✔️</div></div>
+        <div class="servicios-opc"><li> Hasta 10 secciones</li><div class="opcion">✔️</div> </div>
+        <div class="servicios-opc"><li> Cuenta e-mail</li><div class="opcion">✔️</div> </div>
+        <div class="servicios-opc"><li> Web responsive</li> <div class="opcion">✔️</div></div>
+        <div class="servicios-opc"><li> Hasta 30 imágenes</li> <div class="opcion">✔️</div></div>
+        <div class="servicios-opc"><li> Google Analytics</li> <div class="opcion">✔️</div></div>
+        <div class="servicios-opc"><li> Optimización SEO</li> <div class="opcion">✔️</div></div>        <div class="servicios-opc"><li> Certificado SSL</li> <div class="opcion">✔️</div></div>
+        <div class="servicios-opc"><li> Formulario Whatsapp</li> <div class="opcion">✔️</div></div>
+      </ul>
+
+      <div class="precio-final-cont">
+        <div class="precio-final-cont" id="preciofinalpesos">
+          <!-- LANDING -->
+          <p class="precio-final-opc">ARS</p>
+          <p  id="preciopesos" class="precio-final-opc"></p>
+          <!-- 5 PÁGINAS -->
+          <p  id="preciopesoscinco" class="precio-final-opc hide"></p>
+          <!-- 10 PÁGINAS -->
+          <p  id="preciopesosdiez" class="precio-final-opc hide"></p>
+          
+        </div>
+
+        <div id="preciofinalusd" class="precio-final-cont hide">
+          <!-- LANDING -->
+          <p class="precio-final-opc">USD</p>
+          <p  id="preciousd" class="precio-final-opc"> <strong>99.00</strong></p>
+          <!-- 5 PÁGINAS -->
+          <p  id="preciousdcinco" class="precio-final-opc hide"> <strong>119.00</strong></p>
+          <!-- 10 PÁGINAS -->
+          <p  id="preciousddiez" class="precio-final-opc hide"> <strong>139.00</strong></p>
+        </div>
+
+        <div id="preciofinalethcont" class="precio-final-cont hide">
+          <!-- LANDING -->
+          <p class="precio-final-opc">ETH</p>
+          <p  id="precioeth" class="precio-final-opc"></p>
+          <!-- 5 PÁGINAS -->
+          
+          <p  id="precioethcinco" class="precio-final-opc hide"></p>
+          <!-- 10 PÁGINAS -->
+          
+          <p  id="precioethdiez" class="precio-final-opc hide"></p>
+
+       </div>
+
+        <div id="preciofinalbtccont" class="precio-final-cont hide">
+          <!-- LANDING -->
+          <p class="precio-final-opc">BTC</p>
+          <p  id="preciobtc" class="precio-final-opc"></p>
+          <!-- 5 PÁGINAS -->
+          <p  id="preciobtccinco" class="precio-final-opc hide"></p>
+          <!-- 10 PÁGINAS -->
+          <p  id="preciobtcdiez" class="precio-final-opc hide"></p>
+
+        </div>  
+
+        <div class="monedas-cont">
+          <p id="botonpesos" class="precio-final-monedas monedaactiva">PESOS</p>
+          <p id="botonstable" class="precio-final-monedas">STABLECOINS</p>
+          <p id="botoneth" class="precio-final-monedas">ETHER</p>
+          <p id="botonbtc" class="precio-final-monedas">BITCOIN</p>
+
+        </div>
+      </div>
+
+
+
+      <p class="textopeq">En TTDev preferimos pagos con <b>criptomonedas</b>.</p>
+      <p class="textopeq">El precio toma los valores del USD, ETH y BTC en tiempo real. <br> ¡Esto también podés tenerlo en tu página!</p>
+
+    </div>
+
+  <!-- <div id="precioEthereum"></div> -->
+  </div>
+
 </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

@@ -317,6 +317,11 @@ nav {
   }
 }
 
+.whitemode {
+  color: #2e0c38;
+  background-color: white;
+}
+
 .hacemeclick {
   font-family: "Roboto Slab", serif;
   color: #2e0c38;
@@ -358,12 +363,212 @@ nav {
   filter: invert(100%);
 }
 
+.precios-det-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.opc-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.precios-opc {
+  color: #300b39;
+  text-align: center;
+  align-items: center;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  background-color: white;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  margin: 0.1rem;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.precios-opc:hover {
+  background-color: #78a88d;
+}
+
+.servicios-opc {
+  text-decoration: none;
+  list-style: none;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+.opcion {
+  border-radius: 300px;
+}
+
+.opcion-input {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  border-radius: 100px;
+  text-align: center;
+  position: relative;
+  right: 0.3rem;
+  transition: 0.5s all;
+}
+.opcion-input:hover {
+  color: #77b31e;
+}
+
+.opcion-input-nro {
+  width: 3rem;
+  height: 2rem;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s all;
+}
+.opcion-input-nro:hover {
+  color: #77b31e;
+}
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 60%;
+  margin: 1rem;
+  border-radius: 10px;
+  background-color: #2e0c38;
+  color: white;
+  font-size: 1.5rem;
+  padding: 6rem;
+  font-family: "Roboto Slab", serif;
+}
+
+.precio-final-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0rem;
+}
+
+.precio-final-opc {
+  color: #300b39;
+  text-align: center;
+  align-items: center;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  background-color: white;
+  padding: 1.3rem 0.5rem;
+  font-size: 2rem;
+  margin: 0.1rem;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.precio-final-opc:hover {
+  background-color: #78a88d;
+}
+
+.monedas-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.precio-final-monedas {
+  background-color: #78a88d;
+  font-size: 0.7rem;
+  padding: 0.1rem 0.4rem;
+  margin: 0.1rem;
+  width: 7rem;
+  font-weight: bold;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.precio-final-monedas:hover {
+  color: #300b39;
+  background-color: white;
+}
+
+.cant-pag-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.cant-pag {
+  width: 4rem;
+  transition: 0.5s ease-out;
+  font-weight: bold;
+  cursor: pointer;
+}
+.cant-pag:hover {
+  color: #300b39;
+  background-color: white;
+}
+
+.monedaactiva {
+  color: #300b39;
+  background-color: white;
+}
+
+.textopeq {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  margin: 0.1rem;
+}
+
 .greenback {
   background-color: #78a88d;
 }
 
+.darkmodebutton {
+  background-color: #795282;
+  border: none;
+  border-radius: 15px;
+}
+
+.darkicon {
+  width: 4rem;
+  padding: 1rem;
+  filter: invert(100%);
+  transition: 0.5s ease-in-out;
+}
+.darkicon:hover {
+  transform: rotate(40deg);
+}
+
+.darkmodeback {
+  transition: 0.5s ease-in-out;
+  background-color: #2e0c38;
+  box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.1);
+}
+
 .hide {
   display: none;
+}
+
+.rojo {
+  font-weight: bold;
+  color: #9e1717;
 }
 
 .side {
