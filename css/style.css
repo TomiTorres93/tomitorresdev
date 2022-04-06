@@ -45,7 +45,47 @@ header {
 }
 
 nav {
-  text-align: center;
+  text-align: left;
+  position: fixed;
+  left: 0rem;
+  top: 1rem;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  opacity: 20%;
+  letter-spacing: 1rem;
+  font-size: 1rem;
+}
+nav:hover {
+  opacity: 100%;
+}
+
+.menu-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  text-decoration: none;
+  align-items: left;
+}
+
+.menu-item {
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-weight: lighter;
+  padding: 0.5rem 2rem;
+  list-style: none;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.menu-item:hover {
+  background-color: #78a88d;
+  color: white;
+}
+
+.menu-item-mini {
+  letter-spacing: 0.3rem;
+  font-size: 0.6rem;
 }
 
 .section {
@@ -103,6 +143,7 @@ nav {
 }
 .ttd:hover {
   background-color: #78a88d;
+  color: white;
 }
 
 .mail {
@@ -162,7 +203,7 @@ nav {
   font-family: "Roboto Slab", serif;
   font-weight: bold;
   background-color: white;
-  padding: 0.5rem;
+  padding: 0.5vw;
   font-size: 1.5rem;
   margin: 0.1rem;
   transition: 0.5s ease-in-out;
@@ -170,6 +211,7 @@ nav {
 }
 .subtitulos-trabajos:hover {
   background-color: #78a88d;
+  color: white;
 }
 
 .subtrabcont {
@@ -195,7 +237,7 @@ nav {
   font-family: "Roboto Slab", serif;
   font-weight: bold;
   background-color: #300b39;
-  padding: 0.25rem;
+  padding: 0.15vw;
   font-size: 0.7vw;
   margin: 0.1rem;
   transition: 0.5s ease-in-out;
@@ -264,6 +306,7 @@ nav {
 }
 .skills:hover {
   background-color: #78a88d;
+  color: white;
 }
 
 .white {
@@ -271,11 +314,13 @@ nav {
 }
 
 .bio {
+  margin: 0 auto;
   transition: 0.5s ease-in-out;
   font-family: "Roboto Slab", serif;
+  width: 60%;
   padding: 10rem;
   margin: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   border-radius: 15px;
   background-color: #2e0c38;
   animation: excelente 8s infinite;
@@ -320,6 +365,15 @@ nav {
 .whitemode {
   color: #2e0c38;
   background-color: white;
+}
+
+.cont-botones-skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
 }
 
 .hacemeclick {
@@ -396,6 +450,7 @@ nav {
 }
 .precios-opc:hover {
   background-color: #78a88d;
+  color: white;
 }
 
 .servicios-opc {
@@ -481,6 +536,7 @@ nav {
 }
 .precio-final-opc:hover {
   background-color: #78a88d;
+  color: white;
 }
 
 .monedas-cont {
@@ -546,6 +602,22 @@ nav {
   border-radius: 15px;
 }
 
+.leermasbutton {
+  background-color: #795282;
+  border: none;
+  border-radius: 15px;
+  padding: 0.5rem 2rem;
+  margin: 0rem 1rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+.leermasbutton:hover {
+  background-color: #78a88d;
+}
+
 .darkicon {
   width: 4rem;
   padding: 1rem;
@@ -562,6 +634,126 @@ nav {
   box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.1);
 }
 
+.sectionwa-subtit-cont {
+  justify-content: center;
+}
+
+.wapadding {
+  padding: 15rem 0rem;
+}
+
+.input {
+  width: 30rem;
+  height: fit-content;
+  padding: 1rem;
+  margin: 1rem 1rem 0rem 1rem;
+  background-color: white;
+  border: none;
+  color: #78a88d;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  word-wrap: normal;
+}
+
+.input-date {
+  width: 30rem;
+  padding: 0.4rem 1rem;
+  margin: 1rem 1rem 0rem 1rem;
+  background-color: white;
+  border: none;
+  color: #78a88d;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.input-ff {
+  width: 30rem;
+  padding: 0.2rem 1rem;
+  margin: 0rem 1rem;
+  background-color: #78a88d;
+  border: none;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.6rem;
+}
+
+.input::placeholder {
+  color: #c2c2c2;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.ff-ing-sal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.ff-ing-sal-text {
+  position: relative;
+  bottom: 0.5rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: #78a88d;
+}
+
+.wadestacado {
+  width: 5rem;
+  padding: 0.2rem;
+  margin: 1rem;
+  background-color: #78a88d;
+  font-size: 1rem;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.watexto {
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  padding: 0.5rem;
+  line-height: 2rem;
+}
+
+.wabotonmensaje {
+  width: 10.6rem;
+  padding: 1rem;
+  margin: 3rem 1rem 1rem 1rem;
+  background-color: white;
+  font-size: 1rem;
+  color: #78a88d;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.5s;
+  border: none;
+}
+.wabotonmensaje:hover {
+  background-color: #78a88d;
+  color: white;
+}
+
+.wasendlogo {
+  width: 1.5rem;
+  z-index: 100;
+  transition: all 0.5s;
+  filter: invert(100%);
+}
+
+.center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
 .hide {
   display: none;
 }
@@ -569,6 +761,42 @@ nav {
 .rojo {
   font-weight: bold;
   color: #9e1717;
+}
+
+.verde {
+  color: #78a88d;
+}
+
+.borde1 {
+  border-left: 3px solid #795282;
+}
+
+.borde2 {
+  border-left: 3px solid #78a88d;
+}
+
+.borde3 {
+  border-left: 3px solid #a4c6dd;
+}
+
+.borde4 {
+  border-left: 3px solid #dda4a4;
+}
+
+.borde1bold {
+  border-left: 5px solid #795282;
+}
+
+.borde2bold {
+  border-left: 5px solid #78a88d;
+}
+
+.borde3bold {
+  border-left: 5px solid #a4c6dd;
+}
+
+.borde4bold {
+  border-left: 5px solid #dda4a4;
 }
 
 .side {
@@ -701,6 +929,13 @@ nav {
 /*AGREGAR WEBKITS*/
 /* MOBILE */
 /* Extends */
+.sectionwa-subtit-cont {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 /* LISTAS */
 /* MIXINS */
 /*USADOS PARA LAS CLASS: DETACADO Y TITULOS*/

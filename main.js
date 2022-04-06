@@ -226,6 +226,7 @@ darkmode.addEventListener('click', function () {
     const botoneth = document.querySelector('#botoneth')
     const botonbtc = document.querySelector('#botonbtc')
 
+
     const preciofinalpesos = document.querySelector('#preciofinalpesos')
     const preciofinalusd = document.querySelector('#preciofinalusd')
     const preciofinalethcont = document.querySelector('#preciofinalethcont')
@@ -277,6 +278,7 @@ const multipage = document.querySelector('#multipage')
 const paginas = document.querySelector('#paginas')
 const cincopag = document.querySelector('#cincopag')
 const diezpag = document.querySelector('#diezpag')
+const hastadiez = document.querySelector('#hastadiez')
 
 // const precioeth = document.querySelector('#precioeth')
 // const preciobtc = document.querySelector('#preciobtc')
@@ -301,12 +303,14 @@ const preciobtcdiez = document.querySelector('#preciobtcdiez')
 multipage.addEventListener('click', function () {
     paginas.classList.toggle('side');
     paginas.classList.toggle('hide');
-    
+    hastadiez.classList.toggle('hide');
+
 })
 
 landing.addEventListener('click', function () {
     paginas.classList.add('hide');
-    
+    hastadiez.classList.toggle('hide');
+
 })
 
 function cambiarPrecio (a,b,c,d,e,f,g,h,i,j,k,l,m) {
@@ -526,3 +530,146 @@ setTimeout(function() {
             }, 10);
             
         
+
+
+            ///////////////////////
+            /// MENU SCROLL //
+            /////////////////
+
+            let menunav = document.getElementById("menunav")
+
+            window.onscroll = function() {myFunction()};
+
+
+            function myFunction() {
+                if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+                  document.getElementById("menunav").className = "menu-item-mini";
+                }
+              }
+
+
+              menunav.addEventListener('mouseover', function () {
+
+                menunav.classList.remove('menu-item-mini');
+            })
+
+/// WHATSAPP 
+
+
+// const wainputnombre = document.querySelector('#wainputnombre')
+const nombrewa = document.querySelector('#nombrewa')
+const fechaentrada = document.querySelector('#fechaentrada')
+const fechasalida = document.querySelector('#fechasalida')
+const huespedes = document.querySelector('#huespedes')
+
+const wanombre = document.querySelector('#wanombre')
+const wafechaing = document.querySelector('#wafechaing')
+const wafechasal = document.querySelector('#wafechasal')
+const wacantidad = document.querySelector('#wacantidad')
+
+
+
+let form = document.getElementById('form');
+
+form.addEventListener("input", function(e) {
+    e.preventDefault();
+
+      nombre.addEventListener('input', () => {
+        wanombre.setAttribute('data-text', nombre.value)
+
+        wanombre.innerHTML = wanombre.getAttribute('data-text')
+
+    if ((nombre.value).length === 0) {
+        wanombre.innerHTML = 'Empty'
+    }
+
+    })
+
+    // FECHA ENTRADA
+    fechaentrada.addEventListener('input', () => {
+        wafechaing.setAttribute('data-text', fechaentrada.value)
+
+        wafechaing.innerHTML = wafechaing.getAttribute('data-text')
+
+    if ((fechaentrada.value).length === 0) {
+        wafechaing.innerHTML = 'Empty'
+    }
+
+    })
+
+
+
+})
+
+
+
+// ARCHIVAR SOLICITUDES
+
+let nuevasSolicitudes =  []
+
+ 
+
+const enviarmensaje = document.querySelector('#enviarmensaje')
+
+enviarmensaje.addEventListener('click', () => {
+
+
+
+    let nuevaSolicitud = {
+        nombre: nombre.value,
+        fechaentrada: fechaentrada.value,
+        fechasalida: fechasalida.value,
+        huespedes: huespedes.value,
+    };
+
+    form.reset();
+
+    localStorage.setItem("nuevasSolicitudes", JSON.stringify(nuevaSolicitud));
+
+    nuevasSolicitudes.push(nuevaSolicitud); 
+
+    localStorage.setItem("nuevaSolicitud", JSON.stringify(nuevasSolicitudes));
+
+console.log(nuevasSolicitudes)
+
+
+
+
+let whatsappmessage =  "https://wa.me/+5492945589660?text=¡Hola!+Mi+nombre+es+" + `${nuevaSolicitud.nombre}` + ".+Quería+saber+si+tenían+habitación+disponible+para+la+fecha+" + `${nuevaSolicitud.fechaentrada}` + "+hasta+la+fecha+" + `${nuevaSolicitud.fechasalida}` + ".+ Somos+" + `${nuevaSolicitud.huespedes}` + "+personas.+¡Muchas+gracias!+";
+
+console.log(whatsappmessage)
+
+window.location.replace(whatsappmessage)
+
+})
+
+
+
+
+
+
+
+///////////////////////////////////////////
+///// CLICK BOTON DE WHATSAPP/////////
+//ENVIAR EL MENSAJE SE CAMBIA DE TEXTO A LOGO DE ENVIAR///
+
+
+
+const enviartext = document.querySelector("#enviartext")
+const wasendlogo = document.querySelector("#wasendlogo")
+
+
+enviarmensaje.addEventListener('click', () => {
+
+
+    setTimeout(function() { 
+
+        $("#enviartext").fadeOut(50)
+        $("#wasendlogo").fadeIn(500)    
+        
+        enviartext.classList.add('hide');
+        wasendlogo.classList.remove('hide');
+    },100)
+
+})
+            
