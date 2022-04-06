@@ -309,7 +309,7 @@ multipage.addEventListener('click', function () {
 
 landing.addEventListener('click', function () {
     paginas.classList.add('hide');
-    hastadiez.classList.toggle('hide');
+    hastadiez.classList.remove('hide');
 
 })
 
