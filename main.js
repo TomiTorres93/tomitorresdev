@@ -553,19 +553,20 @@ setTimeout(function() {
                 menunav.classList.remove('menu-item-mini');
             })
 
-/// WHATSAPP 
+ 
+
+//// WHATSAPP 
 
 
-// const wainputnombre = document.querySelector('#wainputnombre')
-const nombrewa = document.querySelector('#nombrewa')
-const fechaentrada = document.querySelector('#fechaentrada')
-const fechasalida = document.querySelector('#fechasalida')
-const huespedes = document.querySelector('#huespedes')
 
+
+const username = document.querySelector('#username')
+const usermessage = document.querySelector('#usermessage')
+const email = document.querySelector('#email')
+const subject = document.querySelector('#subject')
+
+const mensajewa = document.querySelector('#mensajewa')
 const wanombre = document.querySelector('#wanombre')
-const wafechaing = document.querySelector('#wafechaing')
-const wafechasal = document.querySelector('#wafechasal')
-const wacantidad = document.querySelector('#wacantidad')
 
 
 
@@ -574,102 +575,64 @@ let form = document.getElementById('form');
 form.addEventListener("input", function(e) {
     e.preventDefault();
 
-      nombre.addEventListener('input', () => {
-        wanombre.setAttribute('data-text', nombre.value)
+    // NOMBRE
+    username.addEventListener('input', () => {
 
-        wanombre.innerHTML = wanombre.getAttribute('data-text')
-
-    if ((nombre.value).length === 0) {
-        wanombre.innerHTML = 'Empty'
-    }
-
+        console.log(username.value)
     })
+ 
 
-    // FECHA ENTRADA
-    fechaentrada.addEventListener('input', () => {
-        wafechaing.setAttribute('data-text', fechaentrada.value)
+     // NOMBRE
+     usermessage.addEventListener('input', () => {
 
-        wafechaing.innerHTML = wafechaing.getAttribute('data-text')
-
-    if ((fechaentrada.value).length === 0) {
-        wafechaing.innerHTML = 'Empty'
-    }
-
+        console.log(usermessage.value)
     })
-
-
+ 
 
 })
-
-
+let nuevaSolicitud = []
 
 // ARCHIVAR SOLICITUDES
-
-let nuevasSolicitudes =  []
-
  
 
 const enviarmensaje = document.querySelector('#enviarmensaje')
 
 enviarmensaje.addEventListener('click', () => {
 
+let nombreform = username.value
+let mensajeform = usermessage.value
 
+let nuevoMensaje = {
+    nombre: username.value,
+    mensaje: usermessage.value,
+};
+console.log(nuevoMensaje)
 
-    let nuevaSolicitud = {
-        nombre: nombre.value,
-        fechaentrada: fechaentrada.value,
-        fechasalida: fechasalida.value,
-        huespedes: huespedes.value,
-    };
-
-    form.reset();
-
-    localStorage.setItem("nuevasSolicitudes", JSON.stringify(nuevaSolicitud));
-
-    nuevasSolicitudes.push(nuevaSolicitud); 
-
-    localStorage.setItem("nuevaSolicitud", JSON.stringify(nuevasSolicitudes));
-
-console.log(nuevasSolicitudes)
-
-
-
-
-let whatsappmessage =  "https://wa.me/+5492945589660?text=¡Hola!+Mi+nombre+es+" + `${nuevaSolicitud.nombre}` + ".+Quería+saber+si+tenían+habitación+disponible+para+la+fecha+" + `${nuevaSolicitud.fechaentrada}` + "+hasta+la+fecha+" + `${nuevaSolicitud.fechasalida}` + ".+ Somos+" + `${nuevaSolicitud.huespedes}` + "+personas.+¡Muchas+gracias!+";
+let whatsappmessage =  "https://wa.me/+5491164845967?text=Mi+nombre+es+ " + 
+`${nombreform}` + ". " + `${mensajeform}`;
 
 console.log(whatsappmessage)
 
-window.location.replace(whatsappmessage)
+window.open(whatsappmessage)
+
+})
+
+
+//// ENVIAR MAIL
+
+const enviarmail = document.querySelector('#enviarmail')
+
+enviarmail.addEventListener('click', () => {
+
+enviarmail.setAttribute("href", "mailto:tt@tomitorresdev.com.ar?subject=Consulta Web - "  + username.value + "&body=" + usermessage.value)
+
+
+
+
+
 
 })
 
 
 
 
-
-
-
-///////////////////////////////////////////
-///// CLICK BOTON DE WHATSAPP/////////
-//ENVIAR EL MENSAJE SE CAMBIA DE TEXTO A LOGO DE ENVIAR///
-
-
-
-const enviartext = document.querySelector("#enviartext")
-const wasendlogo = document.querySelector("#wasendlogo")
-
-
-enviarmensaje.addEventListener('click', () => {
-
-
-    setTimeout(function() { 
-
-        $("#enviartext").fadeOut(50)
-        $("#wasendlogo").fadeIn(500)    
-        
-        enviartext.classList.add('hide');
-        wasendlogo.classList.remove('hide');
-    },100)
-
-})
-            

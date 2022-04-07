@@ -527,34 +527,6 @@ width: 100%;
 
 }
 
-.opcion-input {
-    width: 1rem;
-    height: 1rem;
-    cursor: pointer;
-    border-radius: 100px;
-    text-align: center;
-    position: relative;
-    right: 0.3rem;
-    transition: 0.5s all;
-
-    &:hover {
-        color: rgb(119, 179, 30);
-    }
-}
-
-.opcion-input-nro {
-    width: 3rem;
-    height: 2rem;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-    transition: 0.5s all;
-
-    &:hover {
-        color: rgb(119, 179, 30);
-    }
-}
-
 
 .servicios {
     display: flex;
@@ -722,15 +694,13 @@ width: 100%;
 
 }
 
-.wapadding {
-    padding: 15rem 0rem;
-}
 
 .input {
-    width: 30rem;
+    
+    width: 60%;
     height: fit-content;
     padding: 1rem;
-    margin: 1rem 1rem 0rem 1rem;
+    margin: 1rem;
     background-color: white;
     border: none;
     color: #78a88d;
@@ -738,33 +708,9 @@ width: 100%;
     font-weight: 600;
     text-align: center;
     word-wrap: normal;
+    
 
 }
-
-.input-date {
-    width: 30rem;
-    padding: 0.4rem 1rem;
-    margin: 1rem 1rem 0rem 1rem;
-    background-color: white;
-    border: none;
-    color: #78a88d;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    text-align: center;
-}
-
-.input-ff {
-    width: 30rem;
-    padding: 0.2rem 1rem;
-    margin: 0rem 1rem;
-    background-color: #78a88d;
-    border: none;
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    text-align: center;
-    font-size: 0.6rem;
-}  
 
 
 .input::placeholder {
@@ -814,21 +760,23 @@ width: 100%;
 }
 
 .wabotonmensaje {
-    width: 10.6rem;
-    padding: 1rem;
-    margin: 3rem 1rem 1rem 1rem;
+    color: #300b39;
+    text-align: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
     background-color: white;
-    font-size: 1rem;
-    color: #78a88d;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin: 1rem 0.1rem;
+    transition: 0.5s ease-in-out;
     text-decoration: none;
-    transition: all 0.5s;
-    border: none;
-
+    cursor: pointer;
+    
     &:hover {
-        background-color: #78a88d;
+        background-color: rgb(120,168,141);
         color: white;
+
     }
 
 }
