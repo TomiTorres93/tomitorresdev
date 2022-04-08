@@ -186,24 +186,17 @@ cssbutton.addEventListener('click', function () {
 })
 
 
-jsbutton.addEventListener('click', function () {
-
-    darkmode.classList.toggle('hide');
-    darkmode.classList.toggle('upward');
-
-    
-})
 
 
 
 
 //// DARKMODE
-const darkmode = document.querySelector('#darkmode')
+const lightmode = document.querySelector('#lightmode')
 const sol = document.querySelector('#sol')
 const luna = document.querySelector('#luna')
 
 
-darkmode.addEventListener('click', function () {
+lightmode.addEventListener('click', function () {
 
     bio2.classList.toggle('whitemode');
     luna.classList.toggle('hide');
@@ -280,10 +273,10 @@ const cincopag = document.querySelector('#cincopag')
 const diezpag = document.querySelector('#diezpag')
 const hastadiez = document.querySelector('#hastadiez')
 
-// const precioeth = document.querySelector('#precioeth')
-// const preciobtc = document.querySelector('#preciobtc')
-// const preciousd = document.querySelector('#preciousd')
-// const preciopesos = document.querySelector('#preciopesos')
+  const precioeth2 = document.querySelector('#precioeth')
+ const preciobtc2 = document.querySelector('#preciobtc')
+  const preciousd2 = document.querySelector('#preciousd')
+  const preciopesos2 = document.querySelector('#preciopesos')
 
 
 
@@ -536,7 +529,7 @@ setTimeout(function() {
             /// MENU SCROLL //
             /////////////////
 
-            let menunav = document.getElementById("menunav")
+            const menunav = document.getElementById("menunav")
 
             window.onscroll = function() {myFunction()};
 
@@ -614,7 +607,6 @@ let whatsappmessage =  "https://wa.me/+5491164845967?text=Mi+nombre+es+ " +
 console.log(whatsappmessage)
 
 window.open(whatsappmessage)
-
 })
 
 
@@ -625,14 +617,111 @@ const enviarmail = document.querySelector('#enviarmail')
 enviarmail.addEventListener('click', () => {
 
 enviarmail.setAttribute("href", "mailto:tt@tomitorresdev.com.ar?subject=Consulta Web - "  + username.value + "&body=" + usermessage.value)
-
-
-
-
-
-
 })
 
+
+
+
+
+
+//////////LIGHTMODE////////////
+
+
+const mailheader = document.querySelector('#mailheader')
+const body = document.querySelector('#body')
+const menu1 = document.querySelector('#menu1')
+const menu2 = document.querySelector('#menu2')
+const menu3 = document.querySelector('#menu3')
+const menu4 = document.querySelector('#menu4')
+const titulotrabajos = document.querySelector('#titulotrabajos')
+const tituloskills = document.querySelector('#tituloskills')
+const tituloprecio = document.querySelector('#tituloprecio')
+const titulocontacto = document.querySelector('#titulocontacto')
+const ars = document.querySelector('#ars')
+const usd = document.querySelector('#usd')
+const eth = document.querySelector('#eth')
+const btc = document.querySelector('#btc')
+const pp = document.querySelector('#preciopesos')
+const pusd = document.querySelector('#preciousd')
+const peth = document.querySelector('#precioeth')
+const pbtc = document.querySelector('#preciobtc')
+const textopeqcont = document.querySelector('#textopeqcont')
+
+
+
+
+lightmode.addEventListener('click', function () {
+    body.classList.toggle('lightback')
+        
+    tomi.classList.toggle('lightmodebutton');
+    torres.classList.toggle('lightmodebutton');
+    developer.classList.toggle('lightmodebutton');
+    mailheader.classList.toggle('lightmodebutton');
+    punto.classList.toggle('lightmodebutton');
+    tech.classList.toggle('lightmodebutton');
+
+    hoteleria.classList.toggle('lightmodebutton');
+    educacion.classList.toggle('lightmodebutton');
+    
+
+    htmlbutton.classList.toggle('lightmodebutton');
+    cssbutton.classList.toggle('lightmodebutton');
+    jsbutton.classList.toggle('lightmodebutton');
+
+    landing.classList.toggle('lightmodebutton');
+    multipage.classList.toggle('lightmodebutton');
+
+    preciopesoscinco.classList.toggle('lightmodebutton');
+    preciopesosdiez.classList.toggle('lightmodebutton');
+
+    preciousdcinco.classList.toggle('lightmodebutton');
+    preciousddiez.classList.toggle('lightmodebutton');
+
+    precioethcinco.classList.toggle('lightmodebutton');
+    precioethdiez.classList.toggle('lightmodebutton');
+
+    preciobtccinco.classList.toggle('lightmodebutton');
+    preciobtcdiez.classList.toggle('lightmodebutton');
+
+
+    ars.classList.toggle('lightmodebutton');
+    eth.classList.toggle('lightmodebutton');
+    usd.classList.toggle('lightmodebutton');
+    btc.classList.toggle('lightmodebutton');
+
+    pp.classList.toggle('lightmodebutton');
+    pusd.classList.toggle('lightmodebutton');
+    peth.classList.toggle('lightmodebutton');
+    pbtc.classList.toggle('lightmodebutton');
+
+    username.classList.toggle('lightmodebutton');
+    usermessage.classList.toggle('lightmodebutton');
+
+    enviarmensaje.classList.toggle('lightmodebutton');
+    enviarmail.classList.toggle('lightmodebutton');
+
+
+    omi.classList.toggle('lightmodebuttonwhite');
+    orres.classList.toggle('lightmodebuttonwhite');
+    eveloper.classList.toggle('lightmodebuttonwhite');
+
+
+    titulotrabajos.classList.toggle('lightext')
+    tituloskills.classList.toggle('lightext')
+    tituloprecio.classList.toggle('lightext')
+    titulocontacto.classList.toggle('lightext')
+    textopeqcont.classList.toggle('lightext')
+
+    menu1.classList.toggle('lightmenu')
+    menu2.classList.toggle('lightmenu')
+    menu3.classList.toggle('lightmenu')
+    menu4.classList.toggle('lightmenu')
+
+
+
+        ;})
+
+    
 
 
 

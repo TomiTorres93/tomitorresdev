@@ -66,15 +66,15 @@ nav {
     align-items: left;
 }
 
+
+
 .menu-item {
-    color: white;
     font-family: 'Roboto Slab', serif;
     font-weight: lighter;
     padding: 0.5rem 2rem;
-
+    color: white;
     list-style: none;
     text-decoration: none;
-
     transition: all 0.5s ease-in-out;
     cursor: pointer;
 
@@ -84,6 +84,7 @@ nav {
 
     }
 }
+
 
 .menu-item-mini {
     letter-spacing: 0.3rem;
@@ -353,7 +354,7 @@ nav {
     transition: 0.5s ease-in-out;
     font-family: 'Roboto Slab', serif;
     width: 60%;
-    padding: 10rem;
+    padding: 5rem;
     margin: 1rem;
     font-size: 1.5rem;
     border-radius: 15px;
@@ -552,6 +553,7 @@ width: 100%;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 0rem;
+    border: none;
 }
 
 .precio-final-opc {
@@ -562,17 +564,27 @@ width: 100%;
     font-family: 'Roboto Slab', serif;
     font-weight: bold;
     background-color: white;
-    padding: 1.3rem 0.5rem;
+    padding: 2.1rem 0.5rem;
     font-size: 2rem;
     margin: 0.1rem;
     transition: 0.5s ease-in-out;
     cursor: pointer;
+    border: none;
     
     &:hover {
         background-color: rgb(120,168,141);
         color: white;
     }
 
+}
+
+.textopeqcont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 3rem;
 }
 
 .monedas-cont {
@@ -586,7 +598,7 @@ width: 100%;
 
     background-color: #78a88d;
     font-size: 0.7rem;
-    padding: 0.1rem 0.4rem;
+    padding: 0.3rem 0.4rem;
     margin: 0.1rem;
     width: 7rem;
     font-weight: bold;
@@ -601,7 +613,7 @@ width: 100%;
 }
 .textopeq {
 
-    font-size: 0.7rem;
+    font-size: 1rem;
     padding: 0.2rem 0.5rem;
     margin: 0.1rem;
 }
@@ -641,9 +653,12 @@ width: 100%;
 }
 
 .darkmodebutton {
-    background-color: #795282;
+    background-color: #300b39;
     border: none;
     border-radius: 15px;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
 }
 
 .leermasbutton {
@@ -666,8 +681,8 @@ width: 100%;
 }
 
 .darkicon {
-    width: 4rem;
-    padding: 1rem;
+    width: 2rem;
+    padding: 0.5rem;
     filter: invert(100%);
     transition: 0.5s ease-in-out;
 
@@ -703,13 +718,11 @@ width: 100%;
     margin: 1rem;
     background-color: white;
     border: none;
-    color: #78a88d;
+    color: #300b39;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     text-align: center;
     word-wrap: normal;
-    
-
 }
 
 
@@ -766,9 +779,9 @@ width: 100%;
     font-family: 'Roboto Slab', serif;
     font-weight: bold;
     background-color: white;
-    padding: 1rem;
+    padding: 0.5rem;
     font-size: 1.5rem;
-    margin: 1rem 0.1rem;
+    margin: 0.1rem;
     transition: 0.5s ease-in-out;
     text-decoration: none;
     cursor: pointer;
@@ -781,9 +794,6 @@ width: 100%;
 
 }
 
-
-
-
 .wasendlogo {
     width: 1.5rem;
     z-index: 100;
@@ -792,6 +802,14 @@ width: 100%;
     filter: invert(100%);
 }
 
+
+.lightmode {
+    position: absolute;
+    top: 2rem;
+    color: #300b39;
+    padding: 2rem;
+    background-color: white;
+}
 
 .center {
     display: flex;
@@ -1014,3 +1032,39 @@ width: 100%;
 }
 }
 
+
+
+///////////////////////////
+////LIGHT MODE///////////
+
+
+
+.lightback {
+color: #300b39;
+background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 5%, rgba(242,223,255,1) 46%, rgba(241,255,250,1) 100%);
+}
+
+
+.lightmodebutton {
+    color:white;
+    background: #300b39;
+}
+
+.lightmodebuttonwhite {
+    color:white;
+    background: rgb(120,168,141);
+}
+
+.lightext {
+    color: #300b39;
+}
+
+.lightmenu {
+    color: #300b39;
+
+    &:hover {
+        background-color: #300b39;
+        color: white;
+    }
+}

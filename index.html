@@ -50,7 +50,7 @@
   <title> TomiTorresDev </title>
 </head>
 
-<body>
+<body id="body">
 
 <!-- BARRA DE NAVEGACION -->
 
@@ -59,6 +59,7 @@
     Próximamente.
     </p>
 </div> -->
+
 
 <header class="ttd-cont">
     <p class="ttd" id="tomi">T</p>
@@ -73,7 +74,9 @@
     <p class="ttd-text greenback hide" id="proximamente">SOON</p>
     <p class="ttd" id="punto">.</p>
 
-    <a class="mail" href="mailto:tt@tomitorresdev.com.ar">CONTACTO</a>
+    <a class="mail" id="mailheader" href="mailto:tt@tomitorresdev.com.ar">CONTACTO</a>
+
+    <button id="lightmode" class="darkmodebutton" type="text"> <img id="sol" class="darkicon" src="images\sol.png" alt="sol"> <img id="luna" class="darkicon hide" src="images\luna.png" alt="sol"></button> 
 
 </header>
 
@@ -81,10 +84,10 @@
 
 <nav id="menunav" class="menu-nav">
   <ul class="menu-cont">
-    <a class="menu-item borde1"  href="secciontrabajos">TRABAJOS</a>
-    <a class="menu-item borde2" href="seccionskills">SKILLS</a>
-    <a class="menu-item borde3" href="seccionprecios">PRECIOS</a>
-    <a class="menu-item borde4" href="seccioncontacto">CONTACTO</a>
+    <a class="menu-item borde1"  href="secciontrabajos" id="menu1">TRABAJOS</a>
+    <a class="menu-item borde2" href="seccionskills" id="menu2">SKILLS</a>
+    <a class="menu-item borde3" href="seccionprecios" id="menu3">PRECIOS</a>
+    <a class="menu-item borde4" href="seccioncontacto" id="menu4">CONTACTO</a>
 
   </ul>
 </nav>
@@ -92,7 +95,7 @@
 <!-- NUESTROS TRABAJOS -->
 
 <section class="section" id="secciontrabajos">
-    <h2 class="titulos">TRABAJOS</h2>
+    <h2 class="titulos" id="titulotrabajos">TRABAJOS</h2>
 
     <div class="nuestrostrabajoscont">
         <div class="subtrabcont">
@@ -151,7 +154,7 @@
 
 
 <section class="section">
-  <h2 class="titulos">SKILLS</h2>
+  <h2 class="titulos" id="tituloskills">SKILLS</h2>
 
   <div class="skillscont">
     <p id="htmlbutton" type="text" class="skills borde1bold">HTML</p>
@@ -167,21 +170,13 @@
   <br><br>
   En cada trabajo busco una crear identidad para la marca, apostando por <strong> diseños personalizados, innovadores y ligeros</strong>.
   </p> 
-
-  
-
   </div>
 
-  <div class="cont-botones-skills">
-  <button id="darkmode" class="darkmodebutton hide" type="text"> <img id="sol" class="darkicon" src="images\sol.png" alt="sol"> <img id="luna" class="darkicon hide" src="images\luna.png" alt="sol"></button> 
-
-
-</div>
 </section>
 
 
 <section class="section">
-  <h2 class="titulos">¡EL MEJOR PRECIO!</h2>
+  <h2 class="titulos" id="tituloprecio">¡EL MEJOR PRECIO!</h2>
 
   <div class="precios-cont white">
 
@@ -205,13 +200,14 @@
         <div class="servicios-opc"><li> Hasta 30 imágenes</li> <div class="opcion">✔️</div></div>
         <div class="servicios-opc"><li> Google Analytics</li> <div class="opcion">✔️</div></div>
         <div class="servicios-opc"><li> Optimización SEO</li> <div class="opcion">✔️</div></div>        <div class="servicios-opc"><li> Certificado SSL</li> <div class="opcion">✔️</div></div>
-        <div class="servicios-opc"><li> Formulario Whatsapp</li> <div class="opcion">✔️</div></div>
+        <div class="servicios-opc"><li> Formulario Whatsapp/Email</li> <div class="opcion">✔️</div></div>
+        <div class="servicios-opc"><li> Darkmode</li> <div class="opcion">✔️</div></div>        
       </ul>
 
       <div class="precio-final-cont">
         <div class="precio-final-cont" id="preciofinalpesos">
           <!-- LANDING -->
-          <p class="precio-final-opc">ARS</p>
+          <p class="precio-final-opc" id="ars">ARS</p>
           <p  id="preciopesos" class="precio-final-opc"></p>
           <!-- 5 PÁGINAS -->
           <p  id="preciopesoscinco" class="precio-final-opc hide"></p>
@@ -222,7 +218,7 @@
 
         <div id="preciofinalusd" class="precio-final-cont hide">
           <!-- LANDING -->
-          <p class="precio-final-opc">USD</p>
+          <p class="precio-final-opc" id="usd">USD</p>
           <p  id="preciousd" class="precio-final-opc"> <strong>99.00</strong></p>
           <!-- 5 PÁGINAS -->
           <p  id="preciousdcinco" class="precio-final-opc hide"> <strong>119.00</strong></p>
@@ -232,7 +228,7 @@
 
         <div id="preciofinalethcont" class="precio-final-cont hide">
           <!-- LANDING -->
-          <p class="precio-final-opc">ETH</p>
+          <p class="precio-final-opc" id="eth">ETH</p>
           <p  id="precioeth" class="precio-final-opc"></p>
           <!-- 5 PÁGINAS -->
           
@@ -245,7 +241,7 @@
 
         <div id="preciofinalbtccont" class="precio-final-cont hide">
           <!-- LANDING -->
-          <p class="precio-final-opc">BTC</p>
+          <p class="precio-final-opc" id="btc">BTC</p>
           <p  id="preciobtc" class="precio-final-opc"></p>
           <!-- 5 PÁGINAS -->
           <p  id="preciobtccinco" class="precio-final-opc hide"></p>
@@ -264,10 +260,11 @@
       </div>
 
 
+      <div class="textopeqcont" id="textopeqcont">
 
       <p class="textopeq">En TTDev preferimos pagos con <b>criptomonedas</b>.</p>
-      <p class="textopeq">El precio toma los valores del USD, ETH y BTC en tiempo real. <br> ¡Esto también podés tenerlo en tu página!</p>
-
+      <p class="textopeq">El precio toma los valores del USD, ETH y BTC en tiempo real. <br> <b> ¡Esto también podés tenerlo en tu página!</b></p>
+    </div>
     </div>
 
   
@@ -280,7 +277,7 @@
 
    <section class="section backverde" id="reservawa">
 
-    <p class="titulos blanco"> Contactame</p>
+    <p class="titulos blanco" id="titulocontacto"> Contactame</p>
 
     <form class="sectionwa-subtit-cont"  id="form">
       
