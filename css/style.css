@@ -1016,6 +1016,11 @@ nav:hover {
   color: white;
 }
 
+.lightmenumob {
+  color: black;
+  background-color: white;
+}
+
 .right {
   transition: 0.5s all ease-in-out;
   position: relative;
@@ -1063,7 +1068,7 @@ nav:hover {
 
   .section {
     height: fit-content;
-    padding: 3rem;
+    padding: 10rem 3rem;
   }
 
   nav {
@@ -1078,6 +1083,10 @@ nav:hover {
     padding: 10rem 0rem 30rem 0rem;
     transition: 0.5s all ease-in-out;
     z-index: 100;
+  }
+
+  .textopeq {
+    font-size: 0.6rem;
   }
 
   .darkmodebutton {
@@ -1130,7 +1139,7 @@ nav:hover {
   }
 
   .rotar {
-    color: white;
+    color: #dda4a4;
     transform: rotate(179.9deg);
   }
 
@@ -1164,6 +1173,34 @@ nav:hover {
   .subtitulos-trabajos-deskmob:hover {
     color: white;
     background-color: #78a88d;
+  }
+
+  .input {
+    width: 80%;
+    height: fit-content;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .wabotonmensaje {
+    margin: 0.5rem;
+  }
+
+  .bio {
+    margin: 0 auto;
+    transition: 0.5s ease-in-out;
+    font-family: "Roboto Slab", serif;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 0.8rem;
+    border-radius: 15px;
+    background-color: #2e0c38;
+  }
+
+  .nuestrostrabajosimg {
+    width: 100%;
   }
 }
 

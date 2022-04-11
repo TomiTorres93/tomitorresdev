@@ -660,8 +660,6 @@ const textopeqcont = document.querySelector('#textopeqcont')
 
 lightmode.addEventListener('click', function () {
 
-    $("#menunav").fadeOut(500)
-    $("#menunav").fadeIn(500)
 
     body.classList.toggle('lightback')
         
@@ -728,6 +726,29 @@ lightmode.addEventListener('click', function () {
     menu3.classList.toggle('lightmenu')
     menu4.classList.toggle('lightmenu')
 
+    var widthbody = $("#body").width()
+
+    console.log(widthbody)
+
+    if (widthbody >= 600) {
+        $("#menunav").fadeOut(500)
+        $("#menunav").fadeIn(500)
+    } 
+
+    if (widthbody <= 600) {
+        menunav.classList.toggle('lightmenumob')
+
+    } 
+
+    
+
+    // if (widthbody >= 600) {
+
+    //     menu1.classList.toggle('lightmenu')
+    //     menu2.classList.toggle('lightmenu')
+    //     menu3.classList.toggle('lightmenu')
+    //     menu4.classList.toggle('lightmenu')
+    //     } 
 
 
         ;})

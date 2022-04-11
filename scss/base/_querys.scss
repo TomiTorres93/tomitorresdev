@@ -32,7 +32,7 @@ body {
 
 .section {
     height: fit-content;
-    padding: 3rem;
+    padding: 10rem 3rem;
 
 }
 
@@ -51,6 +51,9 @@ nav {
 
 }
 
+.textopeq {
+ font-size: 0.6rem;
+}
 
 .darkmodebutton {
     top: 1rem; 
@@ -117,7 +120,7 @@ nav {
 }
 
 .rotar {
-    color: white;
+    color: rgb(221, 164, 164);
     transform: rotate(179.9deg);
 } 
 
@@ -156,6 +159,34 @@ nav {
         color: white;
         background-color: rgb(120,168,141);
     }
+}
+
+.input {
+    width: 80%;
+    height: fit-content;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.wabotonmensaje {
+    margin: 0.5rem;
+}
+
+.bio {
+    margin: 0 auto;
+    transition: 0.5s ease-in-out;
+    font-family: 'Roboto Slab', serif;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 0.8rem;
+    border-radius: 15px;
+    background-color: #2e0c38;
+}
+
+.nuestrostrabajosimg {
+    width: 100%;
 }
 
 }
