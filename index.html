@@ -50,7 +50,7 @@
   <title> TomiTorresDev </title>
 </head>
 
-<body id="body">
+<body  id="body" >
 
 <!-- BARRA DE NAVEGACION -->
 
@@ -61,7 +61,7 @@
 </div> -->
 
 
-<header class="ttd-cont">
+<header class="ttd-cont" id="ttdcont">
     <p class="ttd" id="tomi">T</p>
     <p class="ttd-text hide" id="omi">OMI</p>
 
@@ -71,23 +71,22 @@
     <p class="ttd" id="developer">D</p>
     <p class="ttd-text hide" id="eveloper">EVELOPER</p>
     
-    <p class="ttd-text greenback hide" id="proximamente">SOON</p>
     <p class="ttd" id="punto">.</p>
-
-    <a class="mail" id="mailheader" href="mailto:tt@tomitorresdev.com.ar">CONTACTO</a>
-
-    <button id="lightmode" class="darkmodebutton" type="text"> <img id="sol" class="darkicon" src="images\sol.png" alt="sol"> <img id="luna" class="darkicon hide" src="images\luna.png" alt="sol"></button> 
 
 </header>
 
+<button id="lightmode" class="darkmodebutton" type="text"> <img id="sol" class="darkicon" src="images\sol.png" alt="sol"> <img id="luna" class="darkicon hide" src="images\luna.png" alt="sol"></button> 
+
 <!-- MENU -->
+
+<button  class="menumobilebutton" id="menumobilebutton" type="text">+</button>
 
 <nav id="menunav" class="menu-nav">
   <ul class="menu-cont">
-    <a class="menu-item borde1"  href="secciontrabajos" id="menu1">TRABAJOS</a>
-    <a class="menu-item borde2" href="seccionskills" id="menu2">SKILLS</a>
-    <a class="menu-item borde3" href="seccionprecios" id="menu3">PRECIOS</a>
-    <a class="menu-item borde4" href="seccioncontacto" id="menu4">CONTACTO</a>
+    <a class="menu-item borde1"  href="#secciontrabajos" id="menu1">TRABAJOS</a>
+    <a class="menu-item borde2" href="#seccionskills" id="menu2">SKILLS</a>
+    <a class="menu-item borde3" href="#seccionprecios" id="menu3">PRECIOS</a>
+    <a class="menu-item borde4" href="#reservawa" id="menu4">CONTACTO</a>
 
   </ul>
 </nav>
@@ -153,7 +152,7 @@
 </section>
 
 
-<section class="section">
+<section class="section" id="seccionskills">
   <h2 class="titulos" id="tituloskills">SKILLS</h2>
 
   <div class="skillscont">
@@ -175,8 +174,8 @@
 </section>
 
 
-<section class="section">
-  <h2 class="titulos" id="tituloprecio">¡EL MEJOR PRECIO!</h2>
+<section class="section" id="seccionprecios">
+  <h2 class="titulos" id="tituloprecio">PRECIOS</h2>
 
   <div class="precios-cont white">
 
@@ -188,6 +187,7 @@
       </div>
 
       <ul class="servicios">
+        
         <div id="paginas" class="servicios-opc hide"><li> Cantidad de páginas</li> <div class="cant-pag-cont">
           <p id="cincopag" class="textopeq greenback cant-pag">hasta 5</p>
           <p id="diezpag" class="textopeq greenback cant-pag" >hasta 10</p>

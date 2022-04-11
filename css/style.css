@@ -31,8 +31,8 @@ body {
   font-family: "Montserrat", sans-serif;
   background: #2e3d44;
   background: linear-gradient(180deg, #2e3d44 5%, #300b39 100%);
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,7 +41,7 @@ body {
 }
 
 header {
-  height: 45vw;
+  padding: 20rem 0;
 }
 
 nav {
@@ -53,7 +53,7 @@ nav {
   text-decoration: none;
   opacity: 20%;
   letter-spacing: 1rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 nav:hover {
   opacity: 100%;
@@ -203,7 +203,7 @@ nav:hover {
   font-family: "Roboto Slab", serif;
   font-weight: bold;
   background-color: white;
-  padding: 0.5vw;
+  padding: 0.5rem;
   font-size: 1.5rem;
   margin: 0.1rem;
   transition: 0.5s ease-in-out;
@@ -237,8 +237,8 @@ nav:hover {
   font-family: "Roboto Slab", serif;
   font-weight: bold;
   background-color: #300b39;
-  padding: 0.15vw;
-  font-size: 0.7vw;
+  padding: 0.15rem;
+  font-size: 0.7rem;
   margin: 0.1rem;
   transition: 0.5s ease-in-out;
   width: 5rem;
@@ -265,7 +265,7 @@ nav:hover {
 }
 
 .nuestrostrabajosimgmob {
-  width: 15vw;
+  width: 15rem;
   margin: 1rem;
   border-radius: 10px;
 }
@@ -723,10 +723,6 @@ nav:hover {
   align-items: center;
 }
 
-.hide {
-  display: none;
-}
-
 .rojo {
   font-weight: bold;
   color: #9e1717;
@@ -766,6 +762,19 @@ nav:hover {
 
 .borde4bold {
   border-left: 5px solid #dda4a4;
+}
+
+.menumobilebutton {
+  font-size: 3rem;
+  color: #78a88d;
+  font-weight: lighter;
+  background: none;
+  border: none;
+  position: fixed;
+  top: 0rem;
+  left: 1rem;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
 }
 
 .side {
@@ -892,10 +901,97 @@ nav:hover {
   }
 }
 
+.infade {
+  animation: infade 0.4s;
+  animation-name: infade;
+}
+@keyframes infade {
+  0% {
+    opacity: 0%;
+  }
+  10% {
+    opacity: 5%;
+  }
+  20% {
+    opacity: 10%;
+  }
+  30% {
+    opacity: 15%;
+  }
+  40% {
+    opacity: 20%;
+  }
+  50% {
+    opacity: 30%;
+  }
+  60% {
+    opacity: 50%;
+  }
+  70% {
+    opacity: 70%;
+  }
+  80% {
+    opacity: 80%;
+  }
+  90% {
+    opacity: 90%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.outfade {
+  animation: outfade 0.4s;
+  animation-name: outfade;
+}
+@keyframes infade {
+  0% {
+    opacity: 100%;
+  }
+  10% {
+    opacity: 90%;
+  }
+  20% {
+    opacity: 80%;
+  }
+  30% {
+    opacity: 70%;
+  }
+  40% {
+    opacity: 60%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  60% {
+    opacity: 40%;
+  }
+  70% {
+    opacity: 30%;
+  }
+  80% {
+    opacity: 20%;
+  }
+  90% {
+    opacity: 10%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+.rotar {
+  color: white;
+  transform: rotate(179.9deg);
+}
+
 .lightback {
   color: #300b39;
   background: white;
   background: linear-gradient(180deg, white 5%, #f2dfff 46%, #f1fffa 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .lightmodebutton {
@@ -913,11 +1009,27 @@ nav:hover {
 }
 
 .lightmenu {
-  color: #300b39;
+  color: black;
 }
 .lightmenu:hover {
   background-color: #300b39;
   color: white;
+}
+
+.right {
+  transition: 0.5s all ease-in-out;
+  position: relative;
+  right: 2rem;
+}
+
+.left {
+  transition: 0.5s all ease-in-out;
+  position: relative;
+  left: 2rem;
+}
+
+.hide {
+  display: none;
 }
 
 /* MIXINS */
@@ -944,24 +1056,32 @@ nav:hover {
     display: none !important;
   }
 }
-@media only screen and (min-width: 600px) and (max-width: 1200px) {
-  .seccion-nietos {
-    height: 1200px;
-    padding: 0px 5%;
-  }
-}
 @media only screen and (min-width: 100px) and (max-width: 600px) {
   body .none-mobile {
     display: none !important;
   }
 
-  body {
-    margin: 0px auto;
-    height: 220vw;
+  .section {
+    height: fit-content;
+    padding: 3rem;
   }
 
   nav {
     text-align: center;
+    top: 4rem;
+    width: 100%;
+    opacity: 100%;
+    font-size: 0.8rem;
+    background: black;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 10rem 0rem 30rem 0rem;
+    transition: 0.5s all ease-in-out;
+    z-index: 100;
+  }
+
+  .darkmodebutton {
+    top: 1rem;
   }
 
   .ttd {
@@ -974,6 +1094,76 @@ nav:hover {
 
   .mail {
     font-size: 0.7rem;
+  }
+
+  .titulos {
+    font-size: 1.5rem;
+  }
+
+  .paginascont {
+    margin: 0 auto;
+  }
+
+  .nuestrostrabajosstatic {
+    width: 100%;
+    margin: 1rem;
+    border-radius: 10px;
+    font-size: 3rem;
+    padding: 5rem;
+  }
+
+  .menumobilebutton {
+    font-size: 3rem;
+    color: #78a88d;
+    font-weight: lighter;
+    background: none;
+    border: none;
+    position: fixed;
+    top: 0rem;
+    left: 1rem;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .menu-item {
+    margin-top: 1rem;
+  }
+
+  .rotar {
+    color: white;
+    transform: rotate(179.9deg);
+  }
+
+  .subtitulos-trabajos, .skills, .precios-opc, .wabotonmensaje {
+    font-size: 1rem;
+  }
+
+  .skillscont, .opc-cont, .nuestrostrabajoscont {
+    margin-top: 2rem;
+  }
+
+  .servicios {
+    width: 100%;
+    margin: 1rem;
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+
+  .servicios-opc {
+    font-size: 0.8rem;
+  }
+
+  .subtitulos-trabajos-deskmob {
+    padding: 0.15rem;
+    font-size: 0.7rem;
+    margin: 0.1rem;
+    transition: 0.5s ease-in-out;
+    width: 5rem;
+    cursor: pointer;
+  }
+  .subtitulos-trabajos-deskmob:hover {
+    color: white;
+    background-color: #78a88d;
   }
 }
 

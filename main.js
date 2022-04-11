@@ -534,17 +534,24 @@ setTimeout(function() {
             window.onscroll = function() {myFunction()};
 
 
-            function myFunction() {
-                if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
-                  document.getElementById("menunav").className = "menu-item-mini";
-                }
-              }
+    function myFunction() {
+
+        var widthbody = $("#body").width()
+
+        if (widthbody >= 601) {
+            
+        
+
+    if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+        document.getElementById("menunav").className = "menu-item-mini";
+        }
+    }
 
 
-              menunav.addEventListener('mouseover', function () {
+    menunav.addEventListener('mouseover', function () {
 
-                menunav.classList.remove('menu-item-mini');
-            })
+        menunav.classList.remove('menu-item-mini');
+    })} 
 
  
 
@@ -627,6 +634,7 @@ enviarmail.setAttribute("href", "mailto:tt@tomitorresdev.com.ar?subject=Consulta
 //////////LIGHTMODE////////////
 
 
+const darkmode = document.querySelector('#lightmode')
 const mailheader = document.querySelector('#mailheader')
 const body = document.querySelector('#body')
 const menu1 = document.querySelector('#menu1')
@@ -651,12 +659,15 @@ const textopeqcont = document.querySelector('#textopeqcont')
 
 
 lightmode.addEventListener('click', function () {
+
+    $("#menunav").fadeOut(500)
+    $("#menunav").fadeIn(500)
+
     body.classList.toggle('lightback')
         
     tomi.classList.toggle('lightmodebutton');
     torres.classList.toggle('lightmodebutton');
     developer.classList.toggle('lightmodebutton');
-    mailheader.classList.toggle('lightmodebutton');
     punto.classList.toggle('lightmodebutton');
     tech.classList.toggle('lightmodebutton');
 
@@ -723,5 +734,94 @@ lightmode.addEventListener('click', function () {
 
     
 
+////////////////////////////////////////////
+///////////////// MENU MOBILE //////////////
+////////////////////////////////////////////
+
+
+
+/////////////// ESCONDER SI ES MOBILE //////////////
+const menumobilebutton = document.querySelector('#menumobilebutton');
+
+
+var widthbody = $("#body").width()
+
+console.log(widthbody)
+
+function addhideifmobile (a) {
+    var widthbody = $("#body").width()
+
+    if (widthbody <= 600) {
+        a.classList.add('hide')
+    } 
+}
+
+
+let hidemenu = addhideifmobile(menunav)
+
+
+/////////////// ESCONDER MENU SI ES DESKTOP //////////////
+
+function addhideifdesktop (a) {
+    var widthbody = $("#body").width()
+
+    if (widthbody >= 601) {
+        a.classList.add('hide')
+    } 
+}
+
+let hidemenumobbutton = addhideifdesktop(menumobilebutton)
+
+/////////////// BOTÓN MENÚ MOBILE //////////////
+
+
+function fade (a) {
+
+    let check = a.classList.contains('hide')
+
+    console.log(check)
+
+    if (check == true) {
+        a.classList.add('infade');
+    } if (check == false) {
+        a.classList.add('outfade');
+    }
+}
+
+
+
+menumobilebutton.addEventListener('click', function () {
+
+   
+
+
+    menunav.classList.toggle('hide');
+
+    menumobilebutton.classList.toggle('rotar');
+
+})
+
+
+// CERRAR EL MENU AL CLICKEAR EN UNA OPCIÓN
+
+function cerrarmenumobile (a) {
+    a.addEventListener('click', function () {  
+
+        var widthbody = $("#body").width()
+
+        if (widthbody <= 600) {
+            menunav.classList.toggle('hide');
+            menumobilebutton.classList.toggle('rotar');
+    
+        } 
+        
+
+}
+     ) }
+
+let cerrarmenu1 = cerrarmenumobile (menu1)
+let cerrarmenu2 = cerrarmenumobile (menu2)
+let cerrarmenu3 = cerrarmenumobile (menu3)
+let cerrarmenu4 = cerrarmenumobile (menu4)
 
 
