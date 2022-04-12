@@ -93,7 +93,7 @@ nav {
 
 .section {
     height: fit-content;
-    padding: 5rem;
+    padding: 10rem;
     text-align: center;
     width: 100%;
 }
@@ -698,8 +698,105 @@ width: 100%;
 }
 
 
+/////////// GITHUB
+
+.titulosgit {
+    color: rgb(214, 214, 214);
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.githublogo {
+    width: 5rem;
+    margin-bottom: 2rem;
+}
+.githubsquarecont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.githubsquare {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0.15rem;
+    border-radius: 1.5px;
+    background-color: #2d323a;
+    
+}
+
+.githubsquareanim {
+    animation: githubsquareanim 6s infinite;
+    animation-name: githubsquareanim;
+
+    @keyframes githubsquareanim {
+
+        0% {
+            background-color: #2d323a;
+        }
+
+        30% {
+            background-color: #59d24d;        
+        }
+        
+        50% {
+            background-color: #59d24d;        
+        }
+
+        100% {
+            background-color: #2d323a;
+        }
+}
+}
+
+.githubperfilcont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; 
+    margin: 2rem;
+}
+
+.githubperfilsubcont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    margin: 2rem;
+}
+
+.githubperfil {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100px;
+    object-fit: cover;
+    transition: all 0.2s;
+    padding: 0.1rem;
+    cursor: pointer;
+}
+
+.gitbutton {
+    text-decoration: none;
+    background-color: rgb(100, 100, 100);
+    color: rgb(180, 180, 180);
+    font-size: 0.8rem;
+    width: 10rem;
+    padding: 0.3rem 0rem;
+    font-weight: bolder;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
 
 
+    &:hover {
+        color: white;
+        background-color: rgb(134, 134, 134);
+        box-shadow: 0 0 0.5px 0.5px white inset;
+
+    }
+
+}
 /////////WHATSAPP
 
 // SECCION WHATSAPP
@@ -1142,8 +1239,8 @@ width: 100%;
 }}
 
 .rotar {
-    color: white;
-    transform: rotate(179.9deg);
+    color: rgb(221, 164, 164);
+    transform: rotate(135deg);
 } 
 
 

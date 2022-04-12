@@ -359,8 +359,7 @@ setTimeout(function() {
         
     });
 
-
-    }, 10);
+ }, 10);
 
    //ETH 
 setTimeout(function() {
@@ -845,4 +844,87 @@ let cerrarmenu2 = cerrarmenumobile (menu2)
 let cerrarmenu3 = cerrarmenumobile (menu3)
 let cerrarmenu4 = cerrarmenumobile (menu4)
 
+
+
+
+///////////////// GITHUB SQUARES
+
+const githubsectcont = document.querySelector('#githubsectcont');
+
+const cantsquares = githubsectcont.childElementCount
+
+console.log(cantsquares)
+
+for (var i = 0; i < cantsquares; i++) {
+    
+function nuevoid(){
+            var counter = i;
+             return 'square' + counter++}
+      let newuno = nuevoid(i)
+      let square = githubsectcont.children 
+    let githubsectcontcheck = square[i].classList.contains('githubsquareanim');
+    const next = square[i].nextElementSibling
+    if (githubsectcontcheck == false) {
+        square[i].setAttribute("id", newuno); }    
+    };
+
+
+
+
+
+// for (var i = 0; i < cantsquares; i++) {
+
+  
+// function addgithubsquareanim () {
+ 
+//     for (var i = 0; i < cantsquares; i++) {
+
+//         let square = githubsectcont.children 
+//         console.log(i)
+//         let timeout = 200 * i; 
+// setTimeout(function() { 
+//     for (var i = 0; i < cantsquares; i++)   {
+//     square[i].classList.add('githubsquareanim')}}, timeout)
+//     console.log(timeout)
+//     }
+
+
+// }
+
+// addgithubsquareanim()
+
+
+
+setTimeout(function() { 
+    square1.classList.add('githubsquareanim')}, 200)   
+ setTimeout(function() { 
+     square2.classList.add('githubsquareanim')}, 200)
+ setTimeout(function() { 
+     square3.classList.add('githubsquareanim')}, 400)
+ setTimeout(function() { 
+     square4.classList.add('githubsquareanim')}, 600)
+ setTimeout(function() { 
+    square5.classList.add('githubsquareanim')}, 800)
+ setTimeout(function() { 
+     square6.classList.add('githubsquareanim')}, 1000)
+ setTimeout(function() { 
+    square7.classList.add('githubsquareanim')}, 1200)
+ setTimeout(function() { 
+     square8.classList.add('githubsquareanim')}, 1400)
+ setTimeout(function() { 
+     square9.classList.add('githubsquareanim')}, 1600)
+ setTimeout(function() { 
+     square10.classList.add('githubsquareanim')}, 1800)
+ setTimeout(function() { 
+     square11.classList.add('githubsquareanim')}, 2000)
+ setTimeout(function() { 
+     square12.classList.add('githubsquareanim')}, 2200)
+ setTimeout(function() { 
+     square13.classList.add('githubsquareanim')}, 2400)
+ setTimeout(function() { 
+     square14.classList.add('githubsquareanim')}, 2600)
+ setTimeout(function() { 
+     square15.classList.add('githubsquareanim')}, 2800)
+ setTimeout(function() { 
+     square16.classList.add('githubsquareanim')}, 3000)
 

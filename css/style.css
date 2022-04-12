@@ -90,7 +90,7 @@ nav:hover {
 
 .section {
   height: fit-content;
-  padding: 5rem;
+  padding: 10rem;
   text-align: center;
   width: 100%;
 }
@@ -623,6 +623,96 @@ nav:hover {
   box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.1);
 }
 
+.titulosgit {
+  color: #d6d6d6;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.githublogo {
+  width: 5rem;
+  margin-bottom: 2rem;
+}
+
+.githubsquarecont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.githubsquare {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0.15rem;
+  border-radius: 1.5px;
+  background-color: #2d323a;
+}
+
+.githubsquareanim {
+  animation: githubsquareanim 6s infinite;
+  animation-name: githubsquareanim;
+}
+@keyframes githubsquareanim {
+  0% {
+    background-color: #2d323a;
+  }
+  30% {
+    background-color: #59d24d;
+  }
+  50% {
+    background-color: #59d24d;
+  }
+  100% {
+    background-color: #2d323a;
+  }
+}
+
+.githubperfilcont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 2rem;
+}
+
+.githubperfilsubcont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.githubperfil {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100px;
+  object-fit: cover;
+  transition: all 0.2s;
+  padding: 0.1rem;
+  cursor: pointer;
+}
+
+.gitbutton {
+  text-decoration: none;
+  background-color: #646464;
+  color: #b4b4b4;
+  font-size: 0.8rem;
+  width: 10rem;
+  padding: 0.3rem 0rem;
+  font-weight: bolder;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+.gitbutton:hover {
+  color: white;
+  background-color: #868686;
+  box-shadow: 0 0 0.5px 0.5px white inset;
+}
+
 .sectionwa-subtit-cont {
   justify-content: center;
 }
@@ -982,8 +1072,8 @@ nav:hover {
 }
 
 .rotar {
-  color: white;
-  transform: rotate(179.9deg);
+  color: #dda4a4;
+  transform: rotate(135deg);
 }
 
 .lightback {
@@ -1073,16 +1163,16 @@ nav:hover {
 
   nav {
     text-align: center;
-    top: 4rem;
+    top: 0rem;
     width: 100%;
     opacity: 100%;
     font-size: 0.8rem;
-    background: black;
-    background-attachment: fixed;
+    background: #300b39;
+    background: linear-gradient(0deg, #300b39 17%, black 90%, rgba(0, 0, 0, 0) 100%);
     background-repeat: no-repeat;
-    padding: 10rem 0rem 30rem 0rem;
+    padding: 10rem 0rem 40rem 0rem;
     transition: 0.5s all ease-in-out;
-    z-index: 100;
+    z-index: 50;
   }
 
   .textopeq {
@@ -1090,7 +1180,9 @@ nav:hover {
   }
 
   .darkmodebutton {
-    top: 1rem;
+    top: 1.5rem;
+    right: 1rem;
+    z-index: 100;
   }
 
   .ttd {
@@ -1114,7 +1206,7 @@ nav:hover {
   }
 
   .nuestrostrabajosstatic {
-    width: 100%;
+    width: 120%;
     margin: 1rem;
     border-radius: 10px;
     font-size: 3rem;
@@ -1132,6 +1224,7 @@ nav:hover {
     left: 1rem;
     cursor: pointer;
     transition: 0.5s all ease-in-out;
+    z-index: 100;
   }
 
   .menu-item {
@@ -1140,7 +1233,7 @@ nav:hover {
 
   .rotar {
     color: #dda4a4;
-    transform: rotate(179.9deg);
+    transform: rotate(135deg);
   }
 
   .subtitulos-trabajos, .skills, .precios-opc, .wabotonmensaje {

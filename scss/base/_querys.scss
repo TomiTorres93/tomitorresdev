@@ -38,16 +38,16 @@ body {
 
 nav {
     text-align: center;
-    top: 4rem;
+    top: 0rem;
     width: 100%;
     opacity: 100%;
     font-size: 0.8rem;
-    background: black;
-    background-attachment:fixed;
+    background: rgb(48,11,57);
+    background: linear-gradient(0deg, rgba(48,11,57,1) 17%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
     background-repeat: no-repeat;
-    padding: 10rem 0rem 30rem 0rem;
+    padding: 10rem 0rem 40rem 0rem;
     transition: 0.5s all ease-in-out;
-    z-index: 100;
+    z-index: 50;
 
 }
 
@@ -56,7 +56,9 @@ nav {
 }
 
 .darkmodebutton {
-    top: 1rem; 
+    top: 1.5rem; 
+    right: 1rem;
+    z-index: 100;
 }
 
 
@@ -88,7 +90,7 @@ nav {
 }
 
 .nuestrostrabajosstatic {
-    width: 100%;
+    width: 120%;
     margin: 1rem;
     border-radius: 10px;
     font-size: 3rem;
@@ -110,7 +112,7 @@ nav {
     left: 1rem;
     cursor: pointer;
     transition: 0.5s all ease-in-out;
-
+    z-index: 100;
 
 } 
 
@@ -121,7 +123,7 @@ nav {
 
 .rotar {
     color: rgb(221, 164, 164);
-    transform: rotate(179.9deg);
+    transform: rotate(135deg);
 } 
 
 .subtitulos-trabajos, .skills, .precios-opc, .wabotonmensaje {
