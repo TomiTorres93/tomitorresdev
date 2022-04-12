@@ -700,6 +700,18 @@ width: 100%;
 
 /////////// GITHUB
 
+.gitsect {
+    background-color: rgb(37, 37, 37, 30%);
+    width: 40%;
+    border-radius: 10px;
+    padding: 5rem;
+    transition: 0.5s all ease-in-out;
+
+    &:hover {
+        background-color: rgb(37, 37, 37, 90%);
+    }
+}
+
 .titulosgit {
     color: rgb(214, 214, 214);
     font-family: 'Roboto Slab', serif;

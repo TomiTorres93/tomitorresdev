@@ -623,6 +623,17 @@ nav:hover {
   box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.1);
 }
 
+.gitsect {
+  background-color: rgba(37, 37, 37, 0.3);
+  width: 40%;
+  border-radius: 10px;
+  padding: 5rem;
+  transition: 0.5s all ease-in-out;
+}
+.gitsect:hover {
+  background-color: rgba(37, 37, 37, 0.9);
+}
+
 .titulosgit {
   color: #d6d6d6;
   font-family: "Roboto Slab", serif;
@@ -1183,6 +1194,24 @@ nav:hover {
     top: 1.5rem;
     right: 1rem;
     z-index: 100;
+  }
+
+  .gitsect {
+    background-color: rgba(37, 37, 37, 0.3);
+    width: 80%;
+    padding: 2rem;
+  }
+
+  .githubperfilcont {
+    width: 90%;
+    flex-direction: column;
+    margin: 0rem;
+  }
+
+  .githubperfil {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 1rem;
   }
 
   .ttd {
