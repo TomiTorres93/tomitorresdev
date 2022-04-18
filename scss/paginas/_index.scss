@@ -860,7 +860,7 @@ width: 100%;
     font-family: 'Roboto Slab', serif;
     font-size: 1rem;
     font-weight: bold;
-    margin: 0.5rem 0rem;
+    margin: 0.5rem 0.5rem;
     color: grey;
     text-decoration: none;
     transition: 0.5s all ease-in-out;
@@ -1043,6 +1043,10 @@ width: 100%;
 
 .borde4bold {
     border-left: 5px solid rgb(221, 164, 164)
+}
+
+.borde5bold {
+    border-left: 5px solid rgb(221, 217, 164)
 }
 
 .color1 {

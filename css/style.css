@@ -772,7 +772,7 @@ nav:hover {
   font-family: "Roboto Slab", serif;
   font-size: 1rem;
   font-weight: bold;
-  margin: 0.5rem 0rem;
+  margin: 0.5rem 0.5rem;
   color: grey;
   text-decoration: none;
   transition: 0.5s all ease-in-out;
@@ -925,6 +925,10 @@ nav:hover {
 
 .borde4bold {
   border-left: 5px solid #dda4a4;
+}
+
+.borde5bold {
+  border-left: 5px solid #ddd9a4;
 }
 
 .color1 {
@@ -1293,7 +1297,7 @@ nav:hover {
   .githubperfilcont {
     width: 90%;
     flex-direction: column;
-    margin: 0rem;
+    margin: 2rem auto;
   }
 
   .githubperfil {
@@ -1432,11 +1436,6 @@ nav:hover {
     margin: 0.15rem;
     border-radius: 1.5px;
     background-color: #2d323a;
-  }
-
-  .githubperfilcont {
-    flex-direction: column;
-    margin: 0 auto;
   }
 
   .githubperfilsubcont {
