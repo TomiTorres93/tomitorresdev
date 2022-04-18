@@ -947,6 +947,11 @@ nav:hover {
   margin: 0rem 0.2rem;
 }
 
+.color5 {
+  color: #ddd9a4;
+  margin: 0rem 0.2rem;
+}
+
 .menumobilebutton {
   font-size: 3rem;
   color: #78a88d;
@@ -1401,11 +1406,15 @@ nav:hover {
     margin: 1rem;
     font-size: 0.8rem;
     border-radius: 15px;
-    background-color: #2e0c38;
   }
 
   .nuestrostrabajosimg {
     width: 100%;
+  }
+
+  .cant-pag {
+    width: 4rem;
+    font-size: 0.7rem;
   }
 
   .github-cont {
