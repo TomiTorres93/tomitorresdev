@@ -700,23 +700,20 @@ width: 100%;
 
 /////////// GITHUB
 
-.gitsect {
-    background-color: rgb(37, 37, 37, 30%);
-    width: 40%;
-    border-radius: 10px;
-    padding: 5rem;
-    transition: 0.5s all ease-in-out;
-
-    &:hover {
-        background-color: rgb(37, 37, 37, 90%);
-    }
-}
-
 .titulosgit {
     color: rgb(214, 214, 214);
     font-family: 'Roboto Slab', serif;
     font-weight: bold;
     font-size: 1.5rem;
+}
+
+.github-cont {
+    width: 60%;
+    margin: 1rem;
+    border-radius: 10px;
+    background-color: #2e0c38;
+    padding: 5rem;
+    margin: 0 auto;
 }
 
 .githublogo {
@@ -790,7 +787,7 @@ width: 100%;
 
 .gitbutton {
     text-decoration: none;
-    background-color: rgb(100, 100, 100);
+    background-color: rgb(100, 100, 100, 50%);
     color: rgb(180, 180, 180);
     font-size: 0.8rem;
     width: 10rem;
@@ -804,11 +801,77 @@ width: 100%;
     &:hover {
         color: white;
         background-color: rgb(134, 134, 134);
-        box-shadow: 0 0 0.5px 0.5px white inset;
+        box-shadow: 0 0 0.3px 0.3px white inset;
 
     }
 
 }
+
+.gitrepocontofrepos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.gitrepocont {
+    border: 0.2px solid rgb(128, 128, 128, 50%);
+    border-radius: 10px;
+    width: 100%;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+}
+
+.gitrepolinea {
+    display: flex;
+    flex-direction: row; 
+}
+
+.githubrepoimg {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1rem;
+
+}
+
+.gitrepotext1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgb(61, 140, 243);
+    }
+
+
+.gitrepotext2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.7rem;
+    margin: 0rem 2rem;
+    color: grey;
+    padding: 0.2rem 0.5rem;
+    height: fit-content;
+    border: 0.1px solid grey;
+    border-radius: 10px;
+
+}
+
+.gitrepotext3 {
+    position: relative;
+    float: left;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.5rem 0rem;
+    color: grey;
+    text-decoration: none;
+    transition: 0.5s all ease-in-out;
+    cursor: cell;
+
+    &:hover {
+    color: rgb(120,168,141);
+    }
+}
+
+
 /////////WHATSAPP
 
 // SECCION WHATSAPP
@@ -961,6 +1024,11 @@ width: 100%;
     border-left: 3px solid rgb(221, 164, 164)
 }
 
+.borde5 {
+    border-left: 3px solid rgb(221, 217, 164)
+}
+
+
 .borde1bold {
     border-left: 5px solid #795282;
 }
@@ -977,6 +1045,25 @@ width: 100%;
     border-left: 5px solid rgb(221, 164, 164)
 }
 
+.color1 {
+    color: #795282;
+    margin: 0rem 0.2rem;
+}
+
+.color2 {
+    color: #78a88d;
+    margin: 0rem 0.2rem;
+}
+
+.color3 {
+    color: rgb(164, 198, 221);
+    margin: 0rem 0.2rem;
+}
+
+.color4 {
+    color: rgb(221, 164, 164);
+    margin: 0rem 0.2rem;
+}
 
 .menumobilebutton {
     font-size: 3rem;
@@ -1299,7 +1386,8 @@ background-size: cover;
 
 .lightmenumob {
     color: black;
-    background-color: white;
+    background: rgb(243, 209, 252);
+    background: linear-gradient(0deg, rgb(230, 196, 238) 17%, rgb(255, 255, 255) 90%, rgba(176, 236, 176, 0) 100%);
 
 }
 

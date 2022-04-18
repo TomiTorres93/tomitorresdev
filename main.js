@@ -640,6 +640,8 @@ const menu1 = document.querySelector('#menu1')
 const menu2 = document.querySelector('#menu2')
 const menu3 = document.querySelector('#menu3')
 const menu4 = document.querySelector('#menu4')
+const menu5 = document.querySelector('#menu5')
+
 const titulotrabajos = document.querySelector('#titulotrabajos')
 const tituloskills = document.querySelector('#tituloskills')
 const tituloprecio = document.querySelector('#tituloprecio')
@@ -724,6 +726,7 @@ lightmode.addEventListener('click', function () {
     menu2.classList.toggle('lightmenu')
     menu3.classList.toggle('lightmenu')
     menu4.classList.toggle('lightmenu')
+    menu5.classList.toggle('lightmenu')
 
     var widthbody = $("#body").width()
 
@@ -843,6 +846,7 @@ let cerrarmenu1 = cerrarmenumobile (menu1)
 let cerrarmenu2 = cerrarmenumobile (menu2)
 let cerrarmenu3 = cerrarmenumobile (menu3)
 let cerrarmenu4 = cerrarmenumobile (menu4)
+let cerrarmenu5 = cerrarmenumobile (menu5)
 
 
 

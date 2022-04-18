@@ -211,4 +211,71 @@ nav {
     width: 100%;
 }
 
+
+//GITHUB
+
+.github-cont {
+    width: 100%;
+    padding: 1rem;
+}
+
+
+.githubsquarecont {
+    flex-wrap: wrap;
+}
+
+.githubsquare {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0.15rem;
+    border-radius: 1.5px;
+    background-color: #2d323a;   
+    }
+
+    .githubperfilcont {
+    
+        flex-direction: column; 
+        margin: 0 auto;
+    }
+
+    .githubperfilsubcont {
+
+        margin: 0rem;
+    }
+    
+    .gitrepocont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; 
+
+        width: 100%;
+        padding: 1rem 1rem;
+        margin: 0.5rem;
+    }
+    .gitrepolinea {
+        flex-direction: column; 
+
+    }
+    .gitrepotext1 {
+        font-size: 0.8rem;
+  
+    }
+    .gitrepotext2 {
+        height: fit-content;
+        font-size: 0.6rem;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    
+    .gitrepotext3 {
+        font-size: 0.8rem;
+        position: relative;
+        float: left;
+    }
+
+    .wabotonmensaje {
+        width: 80%;
+    }
+    
 }

@@ -623,22 +623,20 @@ nav:hover {
   box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.1);
 }
 
-.gitsect {
-  background-color: rgba(37, 37, 37, 0.3);
-  width: 40%;
-  border-radius: 10px;
-  padding: 5rem;
-  transition: 0.5s all ease-in-out;
-}
-.gitsect:hover {
-  background-color: rgba(37, 37, 37, 0.9);
-}
-
 .titulosgit {
   color: #d6d6d6;
   font-family: "Roboto Slab", serif;
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+.github-cont {
+  width: 60%;
+  margin: 1rem;
+  border-radius: 10px;
+  background-color: #2e0c38;
+  padding: 5rem;
+  margin: 0 auto;
 }
 
 .githublogo {
@@ -708,7 +706,7 @@ nav:hover {
 
 .gitbutton {
   text-decoration: none;
-  background-color: #646464;
+  background-color: rgba(100, 100, 100, 0.5);
   color: #b4b4b4;
   font-size: 0.8rem;
   width: 10rem;
@@ -721,7 +719,67 @@ nav:hover {
 .gitbutton:hover {
   color: white;
   background-color: #868686;
-  box-shadow: 0 0 0.5px 0.5px white inset;
+  box-shadow: 0 0 0.3px 0.3px white inset;
+}
+
+.gitrepocontofrepos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gitrepocont {
+  border: 0.2px solid rgba(128, 128, 128, 0.5);
+  border-radius: 10px;
+  width: 100%;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+}
+
+.gitrepolinea {
+  display: flex;
+  flex-direction: row;
+}
+
+.githubrepoimg {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
+}
+
+.gitrepotext1 {
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #3d8cf3;
+}
+
+.gitrepotext2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 0.7rem;
+  margin: 0rem 2rem;
+  color: grey;
+  padding: 0.2rem 0.5rem;
+  height: fit-content;
+  border: 0.1px solid grey;
+  border-radius: 10px;
+}
+
+.gitrepotext3 {
+  position: relative;
+  float: left;
+  font-family: "Roboto Slab", serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0.5rem 0rem;
+  color: grey;
+  text-decoration: none;
+  transition: 0.5s all ease-in-out;
+  cursor: cell;
+}
+.gitrepotext3:hover {
+  color: #78a88d;
 }
 
 .sectionwa-subtit-cont {
@@ -849,6 +907,10 @@ nav:hover {
   border-left: 3px solid #dda4a4;
 }
 
+.borde5 {
+  border-left: 3px solid #ddd9a4;
+}
+
 .borde1bold {
   border-left: 5px solid #795282;
 }
@@ -863,6 +925,26 @@ nav:hover {
 
 .borde4bold {
   border-left: 5px solid #dda4a4;
+}
+
+.color1 {
+  color: #795282;
+  margin: 0rem 0.2rem;
+}
+
+.color2 {
+  color: #78a88d;
+  margin: 0rem 0.2rem;
+}
+
+.color3 {
+  color: #a4c6dd;
+  margin: 0rem 0.2rem;
+}
+
+.color4 {
+  color: #dda4a4;
+  margin: 0rem 0.2rem;
 }
 
 .menumobilebutton {
@@ -1119,7 +1201,8 @@ nav:hover {
 
 .lightmenumob {
   color: black;
-  background-color: white;
+  background: #f3d1fc;
+  background: linear-gradient(0deg, #e6c4ee 17%, white 90%, rgba(176, 236, 176, 0) 100%);
 }
 
 .right {
@@ -1323,6 +1406,67 @@ nav:hover {
 
   .nuestrostrabajosimg {
     width: 100%;
+  }
+
+  .github-cont {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .githubsquarecont {
+    flex-wrap: wrap;
+  }
+
+  .githubsquare {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0.15rem;
+    border-radius: 1.5px;
+    background-color: #2d323a;
+  }
+
+  .githubperfilcont {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .githubperfilsubcont {
+    margin: 0rem;
+  }
+
+  .gitrepocont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 1rem;
+    margin: 0.5rem;
+  }
+
+  .gitrepolinea {
+    flex-direction: column;
+  }
+
+  .gitrepotext1 {
+    font-size: 0.8rem;
+  }
+
+  .gitrepotext2 {
+    height: fit-content;
+    font-size: 0.6rem;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .gitrepotext3 {
+    font-size: 0.8rem;
+    position: relative;
+    float: left;
+  }
+
+  .wabotonmensaje {
+    width: 80%;
   }
 }
 
